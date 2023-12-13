@@ -36,14 +36,14 @@ function ProdukInfo(props) {
           delectus sint, accusamus, beatae ratione nemo magni enim deleniti
           nisi!
         </p>
-        <a onClick={TambahCart()} href="#">Add to Cart</a>
+        <a onClick={(e) => TambahCart(name, e)} href="#">Add to Cart</a>
       </div>
     </div>
   );
 }
 
-function TambahCart(){
-  console.log("Membeli produk...");
+function TambahCart(e){
+  console.log("Membeli " + e);
 }
 
 export default App;
