@@ -17,6 +17,7 @@ function FotoProduk() {
   );
 }
 
+//Conditional Rendering
 function CheckDiscount(props) {
   const {isDiscount} = props;
   if(isDiscount == "yes"){
@@ -36,7 +37,7 @@ function CheckDiscount(props) {
 
 function ProdukInfo(props) {
   const { category, name, isDiscount } = props;
-  const benefits = ["Tidak kusut terkena air", "Bahan lebih halus", "Tidak gerah"];
+  const benefits = ["Tidak kusut terkena air", "Bahan lebih halus", "Tidak gerah"]; //Map Array
   const listBenefits = benefits.map((itemBenefit) =>
     <li>{itemBenefit}</li>)
   return (
